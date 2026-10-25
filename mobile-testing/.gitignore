@@ -1,0 +1,71 @@
+# Robot Framework Reports
+log.html
+report.html
+output.xml
+results/
+screenshots/
+pabot_results/
+
+# Python
+*.pyc
+*.py[cod]
+*$py.class
+__pycache__/
+venv/
+env/
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment Files - Only ignore local
+.env.local
+
+# Keep tracked: .env (SIT default), .env.uat
+
+# App Binaries (Should NOT be in version control)
+apps/*.apk
+apps/*.ipa
+apps/*.app
+apps/*.aab
+
+# Keep only .keep file in apps/
+!apps/.keep
+
+# Test Artifacts
+*.log
+*.tmp
+*.bak
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Sensitive Data
+**/credentials.yaml
+**/secrets.yaml
+*.pem
+*.key
+*.cert
+
+# Node modules (if any)
+node_modules/
+package-lock.json
+
+# Coverage Reports
+htmlcov/
+.coverage
+coverage.xml
+*.cover

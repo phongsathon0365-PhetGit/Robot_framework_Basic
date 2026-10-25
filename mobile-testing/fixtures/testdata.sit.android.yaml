@@ -1,0 +1,42 @@
+# === Appium Capabilities ===
+APPIUM_URL: http://localhost:4723
+PLATFORM_NAME: Android
+PLATFORM_VERSION: "15"
+DEVICE_NAME: Mobile_Pixel8Pro
+APP_PATH: $(System.DefaultWorkingDirectory)/tests/mobile-testing/apps/app-release.apk
+AUTOMATION_NAME: UiAutomator2
+AUTO_GRANT_PERMISSIONS: true
+
+# === API ===
+BASE_URL: https://sit-api.myapp.com
+
+# === Test Data ===
+USERS:
+  valid:
+    email: "testuser@sit.com"
+    name: "Test User"
+  duplicate:
+    email: "testuser@sit.com"
+    name: "Duplicate User"
+  invalid_email:
+    email: "not-an-email"
+    name: "Bad Email User"
+  empty_name:
+    email: "emptyname@sit.com"
+    name: ""
+  logout_user:
+    email: "logout@sit.com"
+    name: "Logout User"
+  login_user:
+    email: "loginuser@sit.com"
+    name: "Login User"
+
+TOKEN:
+  valid: ""
+  invalid: "invalid-token-xyz-000"
+  empty: ""
+
+ORDERS:
+  customer:
+    name: "John Doe"
+    updated_name: "Jane Smith"

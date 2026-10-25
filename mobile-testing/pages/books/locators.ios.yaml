@@ -1,0 +1,13 @@
+# Books Screen
+BOOK_FILTER: "accessibility_id=book_filter"
+FILTER_ALL: "chain=**/XCUIElementTypeButton[`name == 'All'`]"
+FILTER_FICTION: "chain=**/XCUIElementTypeButton[`name == 'Fiction'`]"
+FILTER_NON_FICTION: "chain=**/XCUIElementTypeButton[`name == 'Non-Fiction'`]"
+
+# Book Detail Screen
+BOOK_NAME: "accessibility_id=book_name"
+BOOK_TYPE: "accessibility_id=book_type"
+BOOK_STATUS: "accessibility_id=book_status"
+BOOK_AUTHOR: "accessibility_id=book_author"
+BOOK_PRICE: "accessibility_id=book_price"
+BOOK_STOCK: "accessibility_id=book_stock"

@@ -1,0 +1,4 @@
+EMAIL_INPUT: id=email
+PASSWORD_INPUT: name=password
+LOGIN_BUTTON: id=btn-login
+WELCOME_MESSAGE: xpath=//h5[contains(., 'Welcome to Kru P')]

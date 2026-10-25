@@ -1,0 +1,23 @@
+# ============================================================
+# Auth Locators — iOS
+# ============================================================
+
+# --- AuthPage: Register mode ---
+EMAIL_INPUT: 'chain=**/XCUIElementTypeTextField[`name == "email_input"`]'
+NAME_INPUT: 'chain=**/XCUIElementTypeTextField[`name == "name_input"`]'
+REGISTER_BUTTON: accessibility_id=register_button
+
+# --- AuthPage: Login mode ---
+TOKEN_INPUT: 'chain=**/XCUIElementTypeTextField[`name == "token_input"`]'
+LOGIN_BUTTON: accessibility_id=login_button
+PASTE_TOKEN_BUTTON: accessibility_id=paste_token_button
+
+# --- AuthPage: Toggle & shared ---
+TOGGLE_MODE_BUTTON: accessibility_id=toggle_mode_button
+
+# --- AuthPage: Home Screen ---
+BOTTOM_NAV: accessibility_id=bottom_nav
+LOGOUT_BUTTON: accessibility_id=logout_button
+INFO_BUTTON: accessibility_id=info_button
+COPY_TOKEN_BUTTON: accessibility_id=copy_token_button
+CLOSE_DIALOG_BUTTON: accessibility_id=close_dialog_button

@@ -1,0 +1,165 @@
+# ============================================
+# Mobile Android SIT Pipeline
+# Dockerfile v2.2.5 | Appium 3.x | API 35
+# ============================================
+
+trigger:
+  branches:
+    include:
+      - main
+      - develop
+  paths:
+    include:
+      - tests/mobile-testing/**
+
+resources:
+  repositories:
+  - repository: templates
+    type: git
+    name: pipeline-templates
+    ref: refs/heads/main
+
+pool:
+  name: 'qa-automation'
+
+variables:
+- group: notification-config
+- name: AVD_NAME
+  value: 'Mobile_Pixel8Pro'
+- name: WORKING_DIR
+  value: '$(System.DefaultWorkingDirectory)/tests/mobile-testing'
+- name: RESULTS_DIR
+  value: '$(System.DefaultWorkingDirectory)/tests/mobile-testing/results/android-sit'
+
+stages:
+- stage: MobileAndroidSIT
+  displayName: 'Mobile Android SIT Tests'
+  jobs:
+  - job: RunTests
+    displayName: 'mobile:android:sit'
+    timeoutInMinutes: 60
+
+    steps:
+    - checkout: self
+
+    # Step 1: Start Android Emulator
+    - script: |
+        export PATH="/opt/android-sdk/emulator:/opt/android-sdk/cmdline-tools/latest/bin:/opt/android-sdk/platform-tools:/usr/local/bin:$PATH"
+
+        echo "=== Cleaning stale emulator artifacts ==="
+        pkill -9 -f 'qemu-system' 2>/dev/null || true
+        adb kill-server 2>/dev/null || true
+        rm -f "$ANDROID_AVD_HOME/$(AVD_NAME).avd/userdata-qemu.img" \
+              "$ANDROID_AVD_HOME/$(AVD_NAME).avd/userdata-qemu.img.qcow2" \
+              "$ANDROID_AVD_HOME/$(AVD_NAME).avd/hardware-qemu.ini" \
+              "$ANDROID_AVD_HOME/$(AVD_NAME).avd/hardware-qemu.ini.lock" 2>/dev/null || true
+        rm -rf "$ANDROID_AVD_HOME/$(AVD_NAME).avd/snapshots" 2>/dev/null || true
+        adb start-server 2>/dev/null || true
+
+        echo "=== Starting emulator: $(AVD_NAME) ==="
+        emulator -avd $(AVD_NAME) \
+          -no-window -no-audio -no-boot-anim \
+          -gpu swiftshader_indirect \
+          -no-metrics \
+          -no-snapshot-save -no-snapshot-load \
+          -memory 2048 \
+          > /tmp/emulator_$(AVD_NAME).log 2>&1 &
+        EMU_PID=$!
+        echo "Emulator PID: $EMU_PID"
+
+        echo "Waiting for ADB (timeout: 10 min)..."
+        timeout 600 adb wait-for-device || {
+          echo "❌ ADB timeout. Emulator log:"
+          tail -50 /tmp/emulator_$(AVD_NAME).log
+          exit 1
+        }
+
+        echo "Waiting for boot completion..."
+        count=0
+        while true; do
+          boot=$(adb shell getprop sys.boot_completed 2>/dev/null | tr -d '\r')
+          [ "$boot" = "1" ] && break
+          count=$((count + 1))
+          [ $count -gt 180 ] && {
+            echo "❌ Boot timeout (15 min). Emulator log:"
+            tail -50 /tmp/emulator_$(AVD_NAME).log
+            exit 1
+          }
+          sleep 5
+        done
+
+        echo "✅ Emulator ready: $(AVD_NAME)"
+        echo "  Android: $(adb shell getprop ro.build.version.release)"
+        echo "  API:     $(adb shell getprop ro.build.version.sdk)"
+        echo "  Model:   $(adb shell getprop ro.product.model)"
+      displayName: 'Start Android Emulator ($(AVD_NAME))'
+      env:
+        ANDROID_HOME: /opt/android-sdk
+        ANDROID_SDK_ROOT: /opt/android-sdk
+        ANDROID_AVD_HOME: /opt/android-avd
+        ANDROID_USER_HOME: /opt/.android
+
+    # Step 2: Start Appium Server
+    - script: |
+        appium --log /tmp/appium.log --log-level info &
+        APPIUM_PID=$!
+        echo "Appium PID: $APPIUM_PID"
+
+        echo "Waiting for Appium to be ready..."
+        for i in $(seq 1 20); do
+          if curl -sf http://localhost:4723/status >/dev/null 2>&1; then
+            echo "✅ Appium ready on port 4723"
+            break
+          fi
+          sleep 2
+        done
+      displayName: 'Start Appium Server'
+      env:
+        APPIUM_HOME: /opt/.appium
+
+    # Step 3: Run Robot Framework Tests
+    - script: |
+        mkdir -p "$(RESULTS_DIR)"
+
+        robot \
+          --variable ENV:sit \
+          --variable PLATFORM:android \
+          --outputdir "$(RESULTS_DIR)" \
+          --loglevel INFO \
+          tests-mobile/
+      workingDirectory: $(WORKING_DIR)
+      displayName: 'Run Mobile Android SIT Tests'
+      continueOnError: true
+
+    # Step 4: Stop Emulator & Appium
+    - script: |
+        export PATH="/opt/android-sdk/platform-tools:/usr/local/bin:$PATH"
+        adb emu kill 2>/dev/null || true
+        pkill -9 -f 'qemu-system' 2>/dev/null || true
+        pkill -f 'appium' 2>/dev/null || true
+        adb kill-server 2>/dev/null || true
+        rm -f "$ANDROID_AVD_HOME/$(AVD_NAME).avd/userdata-qemu.img" \
+              "$ANDROID_AVD_HOME/$(AVD_NAME).avd/userdata-qemu.img.qcow2" 2>/dev/null || true
+        echo "✅ Cleanup done"
+      displayName: 'Stop Emulator & Appium'
+      condition: always()
+      env:
+        ANDROID_AVD_HOME: /opt/android-avd
+
+    # Step 5: Publish Test Results
+    - task: PublishTestResults@2
+      condition: always()
+      inputs:
+        testResultsFormat: 'JUnit'
+        testResultsFiles: 'output.xml'
+        searchFolder: '$(RESULTS_DIR)'
+        testRunTitle: 'Mobile Android SIT - $(AVD_NAME)'
+      displayName: 'Publish Test Results'
+
+    # Step 6: Publish Artifacts (report + log + output)
+    - task: PublishBuildArtifacts@1
+      condition: always()
+      inputs:
+        pathToPublish: '$(RESULTS_DIR)'
+        artifactName: 'mobile-android-sit-results'
+      displayName: 'Publish Artifacts'

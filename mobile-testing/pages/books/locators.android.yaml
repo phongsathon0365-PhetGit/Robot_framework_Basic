@@ -1,0 +1,13 @@
+# Books Screen
+BOOK_FILTER: "accessibility_id=book_filter"
+FILTER_ALL: "xpath=//android.widget.Button[@text='All']"
+FILTER_FICTION: "xpath=//android.widget.Button[@text='Fiction']"
+FILTER_NON_FICTION: "xpath=//android.widget.Button[@text='Non-Fiction']"
+
+# Book Detail Screen
+BOOK_NAME: "accessibility_id=book_name"
+BOOK_TYPE: "accessibility_id=book_type"
+BOOK_STATUS: "accessibility_id=book_status"
+BOOK_AUTHOR: "accessibility_id=book_author"
+BOOK_PRICE: "accessibility_id=book_price"
+BOOK_STOCK: "accessibility_id=book_stock"

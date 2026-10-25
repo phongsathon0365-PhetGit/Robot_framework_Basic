@@ -1,0 +1,2641 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.14.0 on darwin)" generated="2026-10-25T10:17:03.530698" rpa="false" schemaversion="5">
+<suite id="s1" name="Register" source="/Users/phet/Documents/GitHub/Robot_framework_Basic/mobile-testing/tests-web/register.robot">
+<test id="s1-t1" name="Verify Checkbox All" line="107">
+<kw name="Verify Checkbox All" owner="registerPage">
+<kw name="Open Register Page" owner="registerPage">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:03.605389" level="INFO">Opening browser 'chrome' to base url 'https://automate-test.stpb-digital.com/'.</msg>
+<arg>${WEB_BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-10-25T10:17:03.605226" elapsed="1.120372"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-10-25T10:17:04.725967" elapsed="0.378127"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${HYPERLINK_CREATE_ACCOUNT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-10-25T10:17:05.104267" elapsed="0.007817"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${HYPERLINK_CREATE_ACCOUNT}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-10-25T10:17:05.112248" elapsed="0.281239"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:05.393822" level="INFO">Clicking element 'xpath=//a[normalize-space(.)='Create an account']'.</msg>
+<arg>${HYPERLINK_CREATE_ACCOUNT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-25T10:17:05.393645" elapsed="0.031889"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${REGISTER_URL}</arg>
+<arg>10s</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" start="2026-10-25T10:17:05.425785" elapsed="0.016186"/>
+</kw>
+<kw name="Verify Register Page Displayed" owner="registerPage">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${WELCOME_MESSAGE}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:05.442455" elapsed="0.003688"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${RESET_BUTTON}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:05.446283" elapsed="0.003103"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${EMAIL_INPUT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:05.449528" elapsed="0.005189"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${PASSWORD_INPUT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:05.454939" elapsed="0.003843"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${MOBILE_PHONE_INPUT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:05.458971" elapsed="0.003422"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${FEMALE_RADIO}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:05.462531" elapsed="0.003094"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${MALE_RADIO}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:05.465740" elapsed="0.004273"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_SQL_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:05.470165" elapsed="0.003421"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_TEST_MANUAL_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:05.473725" elapsed="0.004063"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_AUTOMATE_TEST_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:05.478003" elapsed="0.003145"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_AUTOMATE_TEST2_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:05.481243" elapsed="0.003243"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${NATIONALITY_SELECT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:05.484611" elapsed="0.003147"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${ROLE_SELECT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:05.487869" elapsed="0.002681"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${PLAN_SELECT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:05.490646" elapsed="0.002837"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${REGISTER_BUTTON}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:05.493599" elapsed="0.002670"/>
+</kw>
+<status status="PASS" start="2026-10-25T10:17:05.442237" elapsed="0.054109"/>
+</kw>
+<status status="PASS" start="2026-10-25T10:17:03.604888" elapsed="1.891501"/>
+</kw>
+<kw name="Verify Firstname input field" owner="registerPage">
+<kw name="Open Register Page" owner="registerPage">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:05.496843" level="INFO">Opening browser 'chrome' to base url 'https://automate-test.stpb-digital.com/'.</msg>
+<arg>${WEB_BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-10-25T10:17:05.496724" elapsed="1.130441"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-10-25T10:17:06.629274" elapsed="0.400579"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${HYPERLINK_CREATE_ACCOUNT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-10-25T10:17:07.029993" elapsed="0.007511"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${HYPERLINK_CREATE_ACCOUNT}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-10-25T10:17:07.037639" elapsed="0.269538"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:07.307524" level="INFO">Clicking element 'xpath=//a[normalize-space(.)='Create an account']'.</msg>
+<arg>${HYPERLINK_CREATE_ACCOUNT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-25T10:17:07.307343" elapsed="0.034664"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${REGISTER_URL}</arg>
+<arg>10s</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" start="2026-10-25T10:17:07.342296" elapsed="0.016282"/>
+</kw>
+<kw name="Verify Register Page Displayed" owner="registerPage">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${WELCOME_MESSAGE}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:07.359374" elapsed="0.003728"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${RESET_BUTTON}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:07.363299" elapsed="0.003501"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${EMAIL_INPUT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:07.366952" elapsed="0.005401"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${PASSWORD_INPUT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:07.372490" elapsed="0.003538"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${MOBILE_PHONE_INPUT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:07.376165" elapsed="0.003561"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${FEMALE_RADIO}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:07.379867" elapsed="0.002804"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${MALE_RADIO}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:07.382775" elapsed="0.003937"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_SQL_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:07.386858" elapsed="0.004407"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_TEST_MANUAL_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:07.391413" elapsed="0.003410"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_AUTOMATE_TEST_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:07.394949" elapsed="0.003402"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_AUTOMATE_TEST2_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:07.398471" elapsed="0.003430"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${NATIONALITY_SELECT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:07.402146" elapsed="0.004011"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${ROLE_SELECT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:07.406305" elapsed="0.003176"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${PLAN_SELECT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:07.409606" elapsed="0.002969"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${REGISTER_BUTTON}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:07.412696" elapsed="0.003357"/>
+</kw>
+<status status="PASS" start="2026-10-25T10:17:07.359041" elapsed="0.057107"/>
+</kw>
+<status status="PASS" start="2026-10-25T10:17:05.496623" elapsed="1.919566"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${first_name_input}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:07.416257" elapsed="0.004954"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:07.421553" level="INFO">Clicking element 'xpath=//input[@id='firstname']'.</msg>
+<arg>${first_name_input}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-25T10:17:07.421357" elapsed="0.019766"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:07.441465" level="INFO">Typing text 'กนกนวล' into text field 'xpath=//input[@id='firstname']'.</msg>
+<arg>${first_name_input}</arg>
+<arg>${WEB_FIRSTNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-25T10:17:07.441270" elapsed="0.070313"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:07.511942" level="INFO">Clicking button 'xpath=//button[@id='btn-sign-up']'.</msg>
+<arg>${REGISTER_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-25T10:17:07.511736" elapsed="0.030261"/>
+</kw>
+<status status="PASS" start="2026-10-25T10:17:05.496480" elapsed="2.045643"/>
+</kw>
+<kw name="Verify Lastname input field" owner="registerPage">
+<kw name="Open Register Page" owner="registerPage">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:07.542658" level="INFO">Opening browser 'chrome' to base url 'https://automate-test.stpb-digital.com/'.</msg>
+<arg>${WEB_BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-10-25T10:17:07.542530" elapsed="1.114121"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-10-25T10:17:08.658003" elapsed="0.373635"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${HYPERLINK_CREATE_ACCOUNT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-10-25T10:17:09.031804" elapsed="0.629383"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${HYPERLINK_CREATE_ACCOUNT}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-10-25T10:17:09.661335" elapsed="0.263492"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:09.925136" level="INFO">Clicking element 'xpath=//a[normalize-space(.)='Create an account']'.</msg>
+<arg>${HYPERLINK_CREATE_ACCOUNT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-25T10:17:09.924971" elapsed="0.025234"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${REGISTER_URL}</arg>
+<arg>10s</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" start="2026-10-25T10:17:09.950878" elapsed="0.020098"/>
+</kw>
+<kw name="Verify Register Page Displayed" owner="registerPage">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${WELCOME_MESSAGE}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:09.971457" elapsed="0.005476"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${RESET_BUTTON}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:09.977083" elapsed="0.004039"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${EMAIL_INPUT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:09.981307" elapsed="0.004829"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${PASSWORD_INPUT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:09.986377" elapsed="0.004270"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${MOBILE_PHONE_INPUT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:09.990780" elapsed="0.003254"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${FEMALE_RADIO}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:09.994167" elapsed="0.003508"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${MALE_RADIO}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:09.997820" elapsed="0.003690"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_SQL_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:10.001814" elapsed="0.003701"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_TEST_MANUAL_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:10.005824" elapsed="0.004431"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_AUTOMATE_TEST_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:10.010402" elapsed="0.003425"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_AUTOMATE_TEST2_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:10.014018" elapsed="0.004230"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${NATIONALITY_SELECT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:10.018585" elapsed="0.004776"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${ROLE_SELECT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:10.023510" elapsed="0.003428"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${PLAN_SELECT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:10.027128" elapsed="0.003891"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${REGISTER_BUTTON}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:10.031167" elapsed="0.004381"/>
+</kw>
+<status status="PASS" start="2026-10-25T10:17:09.971212" elapsed="0.064605"/>
+</kw>
+<status status="PASS" start="2026-10-25T10:17:07.542417" elapsed="2.493455"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${last_name_input}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:10.035957" elapsed="0.004050"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:10.040322" level="INFO">Clicking element 'xpath=//input[@id='lastname']'.</msg>
+<arg>${last_name_input}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-25T10:17:10.040161" elapsed="0.020651"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:10.061146" level="INFO">Typing text 'อินขาน' into text field 'xpath=//input[@id='lastname']'.</msg>
+<arg>${last_name_input}</arg>
+<arg>${WEB_LASTNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-25T10:17:10.060957" elapsed="0.083387"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:10.145015" level="INFO">Clicking button 'xpath=//button[@id='btn-sign-up']'.</msg>
+<arg>${REGISTER_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-25T10:17:10.144735" elapsed="0.035934"/>
+</kw>
+<status status="PASS" start="2026-10-25T10:17:07.542245" elapsed="2.638531"/>
+</kw>
+<kw name="Verify Email input field" owner="registerPage">
+<kw name="Open Register Page" owner="registerPage">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:10.181292" level="INFO">Opening browser 'chrome' to base url 'https://automate-test.stpb-digital.com/'.</msg>
+<arg>${WEB_BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-10-25T10:17:10.181166" elapsed="1.088603"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-10-25T10:17:11.270110" elapsed="0.395024"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${HYPERLINK_CREATE_ACCOUNT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-10-25T10:17:11.665305" elapsed="0.011054"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${HYPERLINK_CREATE_ACCOUNT}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-10-25T10:17:11.676518" elapsed="0.262343"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:11.939372" level="INFO">Clicking element 'xpath=//a[normalize-space(.)='Create an account']'.</msg>
+<arg>${HYPERLINK_CREATE_ACCOUNT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-25T10:17:11.939081" elapsed="0.025052"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${REGISTER_URL}</arg>
+<arg>10s</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" start="2026-10-25T10:17:11.964288" elapsed="0.002530"/>
+</kw>
+<kw name="Verify Register Page Displayed" owner="registerPage">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${WELCOME_MESSAGE}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:11.967792" elapsed="0.020968"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${RESET_BUTTON}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:11.989018" elapsed="0.004328"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${EMAIL_INPUT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:11.993502" elapsed="0.004158"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${PASSWORD_INPUT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:11.997981" elapsed="0.005589"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${MOBILE_PHONE_INPUT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:12.003844" elapsed="0.004185"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${FEMALE_RADIO}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:12.008408" elapsed="0.003995"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${MALE_RADIO}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:12.012551" elapsed="0.003501"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_SQL_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:12.016182" elapsed="0.005297"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_TEST_MANUAL_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:12.021639" elapsed="0.004023"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_AUTOMATE_TEST_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:12.025941" elapsed="0.004889"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_AUTOMATE_TEST2_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:12.030982" elapsed="0.004509"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${NATIONALITY_SELECT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:12.035877" elapsed="0.005900"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${ROLE_SELECT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:12.041991" elapsed="0.003758"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${PLAN_SELECT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:12.045900" elapsed="0.003615"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${REGISTER_BUTTON}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:12.049652" elapsed="0.004303"/>
+</kw>
+<status status="PASS" start="2026-10-25T10:17:11.967305" elapsed="0.086793"/>
+</kw>
+<status status="PASS" start="2026-10-25T10:17:10.181048" elapsed="1.873105"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${EMAIL_INPUT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:12.054239" elapsed="0.002635"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:12.057127" level="INFO">Clicking element 'xpath=//input[@id='email']'.</msg>
+<arg>${EMAIL_INPUT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-25T10:17:12.056995" elapsed="0.018985"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:12.076303" level="INFO">Typing text 'Beam1234@gmail.com' into text field 'xpath=//input[@id='email']'.</msg>
+<arg>${EMAIL_INPUT}</arg>
+<arg>${WEB_EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-25T10:17:12.076121" elapsed="0.064516"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:12.141304" level="INFO">Clicking button 'xpath=//button[@id='btn-sign-up']'.</msg>
+<arg>${REGISTER_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-25T10:17:12.140987" elapsed="0.033785"/>
+</kw>
+<status status="PASS" start="2026-10-25T10:17:10.180885" elapsed="1.994160"/>
+</kw>
+<kw name="Verify Mobile Phone input field" owner="registerPage">
+<kw name="Open Register Page" owner="registerPage">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:12.176198" level="INFO">Opening browser 'chrome' to base url 'https://automate-test.stpb-digital.com/'.</msg>
+<arg>${WEB_BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-10-25T10:17:12.176015" elapsed="1.409624"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-10-25T10:17:13.586396" elapsed="0.426883"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${HYPERLINK_CREATE_ACCOUNT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-10-25T10:17:14.013538" elapsed="0.007906"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${HYPERLINK_CREATE_ACCOUNT}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-10-25T10:17:14.021588" elapsed="0.271234"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:14.293262" level="INFO">Clicking element 'xpath=//a[normalize-space(.)='Create an account']'.</msg>
+<arg>${HYPERLINK_CREATE_ACCOUNT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-25T10:17:14.293036" elapsed="0.029933"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${REGISTER_URL}</arg>
+<arg>10s</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" start="2026-10-25T10:17:14.323162" elapsed="0.015368"/>
+</kw>
+<kw name="Verify Register Page Displayed" owner="registerPage">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${WELCOME_MESSAGE}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:14.339009" elapsed="0.003800"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${RESET_BUTTON}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:14.342963" elapsed="0.003624"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${EMAIL_INPUT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:14.346727" elapsed="0.002988"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${PASSWORD_INPUT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:14.349825" elapsed="0.005224"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${MOBILE_PHONE_INPUT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:14.355206" elapsed="0.003762"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${FEMALE_RADIO}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:14.359120" elapsed="0.003555"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${MALE_RADIO}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:14.362876" elapsed="0.003295"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_SQL_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:14.366288" elapsed="0.004432"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_TEST_MANUAL_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:14.370869" elapsed="0.003282"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_AUTOMATE_TEST_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:14.374275" elapsed="0.003364"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_AUTOMATE_TEST2_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:14.377785" elapsed="0.003625"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${NATIONALITY_SELECT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:14.381555" elapsed="0.004036"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${ROLE_SELECT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:14.385735" elapsed="0.003257"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${PLAN_SELECT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:14.389103" elapsed="0.003044"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${REGISTER_BUTTON}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:14.392268" elapsed="0.003442"/>
+</kw>
+<status status="PASS" start="2026-10-25T10:17:14.338789" elapsed="0.057049"/>
+</kw>
+<status status="PASS" start="2026-10-25T10:17:12.175687" elapsed="2.220197"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${MOBILE_PHONE_INPUT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:14.395970" elapsed="0.002189"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:14.398389" level="INFO">Clicking element 'xpath=//input[@id='mobile-phone']'.</msg>
+<arg>${MOBILE_PHONE_INPUT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-25T10:17:14.398265" elapsed="0.018729"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:14.418020" level="INFO">Typing text '08222222222' into text field 'xpath=//input[@id='mobile-phone']'.</msg>
+<arg>${MOBILE_PHONE_INPUT}</arg>
+<arg>${WEB_MOBILE_PHONE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-25T10:17:14.417367" elapsed="0.060781"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:14.478532" level="INFO">Clicking button 'xpath=//button[@id='btn-sign-up']'.</msg>
+<arg>${REGISTER_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-25T10:17:14.478353" elapsed="0.033777"/>
+</kw>
+<status status="PASS" start="2026-10-25T10:17:12.175194" elapsed="2.337051"/>
+</kw>
+<kw name="Verify Password input field" owner="registerPage">
+<kw name="Open Register Page" owner="registerPage">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:14.512799" level="INFO">Opening browser 'chrome' to base url 'https://automate-test.stpb-digital.com/'.</msg>
+<arg>${WEB_BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-10-25T10:17:14.512663" elapsed="1.207179"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-10-25T10:17:15.720876" elapsed="0.389209"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${HYPERLINK_CREATE_ACCOUNT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-10-25T10:17:16.110521" elapsed="0.013973"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${HYPERLINK_CREATE_ACCOUNT}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-10-25T10:17:16.125070" elapsed="0.279952"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:16.405417" level="INFO">Clicking element 'xpath=//a[normalize-space(.)='Create an account']'.</msg>
+<arg>${HYPERLINK_CREATE_ACCOUNT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-25T10:17:16.405214" elapsed="0.030871"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${REGISTER_URL}</arg>
+<arg>10s</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" start="2026-10-25T10:17:16.436370" elapsed="0.016151"/>
+</kw>
+<kw name="Verify Register Page Displayed" owner="registerPage">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${WELCOME_MESSAGE}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:16.453738" elapsed="0.010879"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${RESET_BUTTON}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:16.464764" elapsed="0.005601"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${EMAIL_INPUT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:16.470947" elapsed="0.006464"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${PASSWORD_INPUT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:16.477771" elapsed="0.005368"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${MOBILE_PHONE_INPUT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:16.483329" elapsed="0.004821"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${FEMALE_RADIO}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:16.488295" elapsed="0.002916"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${MALE_RADIO}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:16.491341" elapsed="0.003688"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_SQL_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:16.495171" elapsed="0.003311"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_TEST_MANUAL_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:16.498617" elapsed="0.003933"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_AUTOMATE_TEST_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:16.502726" elapsed="0.003643"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_AUTOMATE_TEST2_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:16.506533" elapsed="0.004214"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${NATIONALITY_SELECT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:16.510897" elapsed="0.003881"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${ROLE_SELECT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:16.514942" elapsed="0.004797"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${PLAN_SELECT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:16.520032" elapsed="0.005269"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${REGISTER_BUTTON}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:16.525485" elapsed="0.006109"/>
+</kw>
+<status status="PASS" start="2026-10-25T10:17:16.453083" elapsed="0.078734"/>
+</kw>
+<status status="PASS" start="2026-10-25T10:17:14.512543" elapsed="2.019333"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${PASSWORD_INPUT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:16.531963" elapsed="0.007346"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:16.539625" level="INFO">Clicking element 'xpath=//input[@id='password']'.</msg>
+<arg>${PASSWORD_INPUT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-25T10:17:16.539463" elapsed="0.024120"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:16.563945" level="INFO">Typing text '1234567890' into text field 'xpath=//input[@id='password']'.</msg>
+<arg>${PASSWORD_INPUT}</arg>
+<arg>${WEB_PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-25T10:17:16.563746" elapsed="0.125371"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:16.689587" level="INFO">Clicking button 'xpath=//button[@id='btn-sign-up']'.</msg>
+<arg>${REGISTER_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-25T10:17:16.689339" elapsed="0.035094"/>
+</kw>
+<status status="PASS" start="2026-10-25T10:17:14.512365" elapsed="2.212282"/>
+</kw>
+<kw name="Verify Mobile Phone input field" owner="registerPage">
+<kw name="Open Register Page" owner="registerPage">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:16.726405" level="INFO">Opening browser 'chrome' to base url 'https://automate-test.stpb-digital.com/'.</msg>
+<arg>${WEB_BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-10-25T10:17:16.725836" elapsed="1.285669"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-10-25T10:17:18.012662" elapsed="0.385786"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${HYPERLINK_CREATE_ACCOUNT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-10-25T10:17:18.398659" elapsed="0.008923"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${HYPERLINK_CREATE_ACCOUNT}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-10-25T10:17:18.407748" elapsed="0.281267"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:18.690071" level="INFO">Clicking element 'xpath=//a[normalize-space(.)='Create an account']'.</msg>
+<arg>${HYPERLINK_CREATE_ACCOUNT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-25T10:17:18.689546" elapsed="0.036355"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${REGISTER_URL}</arg>
+<arg>10s</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" start="2026-10-25T10:17:18.726147" elapsed="0.019205"/>
+</kw>
+<kw name="Verify Register Page Displayed" owner="registerPage">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${WELCOME_MESSAGE}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:18.745783" elapsed="0.003841"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${RESET_BUTTON}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:18.749760" elapsed="0.005865"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${EMAIL_INPUT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:18.755811" elapsed="0.003425"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${PASSWORD_INPUT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:18.759362" elapsed="0.003573"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${MOBILE_PHONE_INPUT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:18.763099" elapsed="0.003136"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${FEMALE_RADIO}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:18.766358" elapsed="0.004471"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${MALE_RADIO}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:18.770965" elapsed="0.003369"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_SQL_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:18.774472" elapsed="0.003758"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_TEST_MANUAL_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:18.778388" elapsed="0.003510"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_AUTOMATE_TEST_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:18.782030" elapsed="0.004117"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_AUTOMATE_TEST2_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:18.786416" elapsed="0.003197"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${NATIONALITY_SELECT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:18.789755" elapsed="0.002995"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${ROLE_SELECT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:18.792882" elapsed="0.003781"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${PLAN_SELECT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:18.796884" elapsed="0.002935"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${REGISTER_BUTTON}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:18.799940" elapsed="0.005277"/>
+</kw>
+<status status="PASS" start="2026-10-25T10:17:18.745581" elapsed="0.059836"/>
+</kw>
+<status status="PASS" start="2026-10-25T10:17:16.725373" elapsed="2.080100"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${MOBILE_PHONE_INPUT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:18.805594" elapsed="0.002998"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:18.808928" level="INFO">Clicking element 'xpath=//input[@id='mobile-phone']'.</msg>
+<arg>${MOBILE_PHONE_INPUT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-25T10:17:18.808758" elapsed="0.020522"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:18.829619" level="INFO">Typing text '08222222222' into text field 'xpath=//input[@id='mobile-phone']'.</msg>
+<arg>${MOBILE_PHONE_INPUT}</arg>
+<arg>${WEB_MOBILE_PHONE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-25T10:17:18.829435" elapsed="0.080517"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:18.910273" level="INFO">Clicking button 'xpath=//button[@id='btn-sign-up']'.</msg>
+<arg>${REGISTER_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-25T10:17:18.910109" elapsed="0.036755"/>
+</kw>
+<status status="PASS" start="2026-10-25T10:17:16.724903" elapsed="2.222085"/>
+</kw>
+<kw name="Verify Gender radio buttons" owner="registerPage">
+<kw name="Open Register Page" owner="registerPage">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:18.947581" level="INFO">Opening browser 'chrome' to base url 'https://automate-test.stpb-digital.com/'.</msg>
+<arg>${WEB_BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-10-25T10:17:18.947432" elapsed="1.352092"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-10-25T10:17:20.299859" elapsed="0.388380"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${HYPERLINK_CREATE_ACCOUNT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-10-25T10:17:20.688542" elapsed="0.013180"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${HYPERLINK_CREATE_ACCOUNT}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-10-25T10:17:20.702005" elapsed="0.268723"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:20.971640" level="INFO">Clicking element 'xpath=//a[normalize-space(.)='Create an account']'.</msg>
+<arg>${HYPERLINK_CREATE_ACCOUNT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-25T10:17:20.971175" elapsed="0.037863"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${REGISTER_URL}</arg>
+<arg>10s</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" start="2026-10-25T10:17:21.009346" elapsed="0.019348"/>
+</kw>
+<kw name="Verify Register Page Displayed" owner="registerPage">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${WELCOME_MESSAGE}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:21.029750" elapsed="0.005645"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${RESET_BUTTON}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:21.035564" elapsed="0.004214"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${EMAIL_INPUT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:21.039962" elapsed="0.008420"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${PASSWORD_INPUT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:21.048571" elapsed="0.004065"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${MOBILE_PHONE_INPUT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:21.052834" elapsed="0.003914"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${FEMALE_RADIO}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:21.056933" elapsed="0.004069"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${MALE_RADIO}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:21.061258" elapsed="0.004080"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_SQL_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:21.065640" elapsed="0.005077"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_TEST_MANUAL_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:21.071117" elapsed="0.004200"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_AUTOMATE_TEST_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:21.075596" elapsed="0.004488"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_AUTOMATE_TEST2_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:21.080382" elapsed="0.005141"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${NATIONALITY_SELECT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:21.085827" elapsed="0.004781"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${ROLE_SELECT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:21.090864" elapsed="0.005252"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${PLAN_SELECT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:21.096301" elapsed="0.005528"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${REGISTER_BUTTON}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:21.102247" elapsed="0.006243"/>
+</kw>
+<status status="PASS" start="2026-10-25T10:17:21.029097" elapsed="0.079604"/>
+</kw>
+<status status="PASS" start="2026-10-25T10:17:18.947308" elapsed="2.161498"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${FEMALE_RADIO}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:21.108993" elapsed="0.004829"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${MALE_RADIO}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:21.114125" elapsed="0.005700"/>
+</kw>
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:21.120564" level="INFO">Selecting 'female' from radio button 'validation-basic-radio'.</msg>
+<arg>${GENDER_GROUP}</arg>
+<arg>female</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="PASS" start="2026-10-25T10:17:21.120138" elapsed="0.116996"/>
+</kw>
+<kw name="Radio Button Should Be Set To" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:21.238280" level="INFO">Verifying radio button 'validation-basic-radio' has selection 'female'.</msg>
+<arg>${GENDER_GROUP}</arg>
+<arg>female</arg>
+<doc>Verifies radio button group ``group_name`` is set to ``value``.</doc>
+<status status="PASS" start="2026-10-25T10:17:21.237700" elapsed="0.052175"/>
+</kw>
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:21.291214" level="INFO">Selecting 'male' from radio button 'validation-basic-radio'.</msg>
+<arg>${GENDER_GROUP}</arg>
+<arg>male</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="PASS" start="2026-10-25T10:17:21.290768" elapsed="0.152255"/>
+</kw>
+<kw name="Radio Button Should Be Set To" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:21.443634" level="INFO">Verifying radio button 'validation-basic-radio' has selection 'male'.</msg>
+<arg>${GENDER_GROUP}</arg>
+<arg>male</arg>
+<doc>Verifies radio button group ``group_name`` is set to ``value``.</doc>
+<status status="PASS" start="2026-10-25T10:17:21.443326" elapsed="0.019931"/>
+</kw>
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:21.463700" level="INFO">Selecting 'male' from radio button 'validation-basic-radio'.</msg>
+<arg>${GENDER_GROUP}</arg>
+<arg>male</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="PASS" start="2026-10-25T10:17:21.463497" elapsed="0.008535"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:21.473019" level="INFO">Executing JavaScript:
+return document.querySelector('input[name="validation-basic-radio"][value="female"]').checked;
+Without any arguments.</msg>
+<msg time="2026-10-25T10:17:21.477203" level="INFO">${checked} = False</msg>
+<var>${checked}</var>
+<arg>return document.querySelector('input[name="validation-basic-radio"][value="female"]').checked;</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-10-25T10:17:21.472408" elapsed="0.005088"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${checked}</arg>
+<arg>${False}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2026-10-25T10:17:21.477806" elapsed="0.000879"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:21.479421" level="INFO">Clicking button 'xpath=//button[@id='btn-sign-up']'.</msg>
+<arg>${REGISTER_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-25T10:17:21.478977" elapsed="0.151309"/>
+</kw>
+<status status="PASS" start="2026-10-25T10:17:18.947117" elapsed="2.684423"/>
+</kw>
+<kw name="Verify Checkbox SQL" owner="registerPage">
+<kw name="Open Register Page" owner="registerPage">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:21.638818" level="INFO">Opening browser 'chrome' to base url 'https://automate-test.stpb-digital.com/'.</msg>
+<arg>${WEB_BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-10-25T10:17:21.634934" elapsed="1.197574"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-10-25T10:17:22.834883" elapsed="0.379397"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${HYPERLINK_CREATE_ACCOUNT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-10-25T10:17:23.214581" elapsed="0.425251"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${HYPERLINK_CREATE_ACCOUNT}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-10-25T10:17:23.640064" elapsed="0.283543"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:23.924178" level="INFO">Clicking element 'xpath=//a[normalize-space(.)='Create an account']'.</msg>
+<arg>${HYPERLINK_CREATE_ACCOUNT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-25T10:17:23.923941" elapsed="0.023899"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${REGISTER_URL}</arg>
+<arg>10s</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" start="2026-10-25T10:17:23.948469" elapsed="0.621280"/>
+</kw>
+<kw name="Verify Register Page Displayed" owner="registerPage">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${WELCOME_MESSAGE}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:24.572084" elapsed="0.004849"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${RESET_BUTTON}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:24.577260" elapsed="0.005775"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${EMAIL_INPUT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:24.583266" elapsed="0.007117"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${PASSWORD_INPUT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:24.590539" elapsed="0.004742"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${MOBILE_PHONE_INPUT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:24.595543" elapsed="0.005066"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${FEMALE_RADIO}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:24.601072" elapsed="0.007178"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${MALE_RADIO}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:24.608507" elapsed="0.004601"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_SQL_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:24.613542" elapsed="0.008009"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_TEST_MANUAL_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:24.622304" elapsed="0.004890"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_AUTOMATE_TEST_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:24.627457" elapsed="0.003791"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_AUTOMATE_TEST2_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:24.631432" elapsed="0.003609"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${NATIONALITY_SELECT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:24.635408" elapsed="0.005805"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${ROLE_SELECT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:24.641669" elapsed="0.005819"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${PLAN_SELECT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:24.647760" elapsed="0.004920"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${REGISTER_BUTTON}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:24.652991" elapsed="0.005232"/>
+</kw>
+<status status="PASS" start="2026-10-25T10:17:24.570118" elapsed="0.088427"/>
+</kw>
+<status status="PASS" start="2026-10-25T10:17:21.633271" elapsed="3.025399"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_SQL_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:24.658809" elapsed="0.003604"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:24.662757" level="INFO">Clicking element 'xpath=//input[@name='courses.SQL']'.</msg>
+<arg>${COURSES_SQL_CHECKBOX}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-25T10:17:24.662584" elapsed="0.028689"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:24.691838" level="INFO">Clicking button 'xpath=//button[@id='btn-sign-up']'.</msg>
+<arg>${REGISTER_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-25T10:17:24.691573" elapsed="0.060539"/>
+</kw>
+<status status="PASS" start="2026-10-25T10:17:21.632131" elapsed="3.122849"/>
+</kw>
+<kw name="Verify Checkbox Manual" owner="registerPage">
+<kw name="Open Register Page" owner="registerPage">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:24.757798" level="INFO">Opening browser 'chrome' to base url 'https://automate-test.stpb-digital.com/'.</msg>
+<arg>${WEB_BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-10-25T10:17:24.755889" elapsed="1.604647"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-10-25T10:17:26.361607" elapsed="0.399411"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${HYPERLINK_CREATE_ACCOUNT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-10-25T10:17:26.761426" elapsed="0.024551"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${HYPERLINK_CREATE_ACCOUNT}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-10-25T10:17:26.786262" elapsed="0.273494"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:27.061999" level="INFO">Clicking element 'xpath=//a[normalize-space(.)='Create an account']'.</msg>
+<arg>${HYPERLINK_CREATE_ACCOUNT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-25T10:17:27.061229" elapsed="0.054836"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${REGISTER_URL}</arg>
+<arg>10s</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" start="2026-10-25T10:17:27.116338" elapsed="0.021822"/>
+</kw>
+<kw name="Verify Register Page Displayed" owner="registerPage">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${WELCOME_MESSAGE}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:27.139272" elapsed="0.010552"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${RESET_BUTTON}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:27.150418" elapsed="0.005617"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${EMAIL_INPUT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:27.156427" elapsed="0.005553"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${PASSWORD_INPUT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:27.162309" elapsed="0.004501"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${MOBILE_PHONE_INPUT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:27.167985" elapsed="0.004765"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${FEMALE_RADIO}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:27.173038" elapsed="0.005005"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${MALE_RADIO}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:27.178219" elapsed="0.004158"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_SQL_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:27.182638" elapsed="0.008043"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_TEST_MANUAL_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:27.191034" elapsed="0.009738"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_AUTOMATE_TEST_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:27.201051" elapsed="0.009725"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_AUTOMATE_TEST2_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:27.211215" elapsed="0.010650"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${NATIONALITY_SELECT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:27.222673" elapsed="0.016126"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${ROLE_SELECT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:27.239188" elapsed="0.014545"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${PLAN_SELECT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:27.254071" elapsed="0.004845"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${REGISTER_BUTTON}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:27.259234" elapsed="0.006224"/>
+</kw>
+<status status="PASS" start="2026-10-25T10:17:27.138790" elapsed="0.126975"/>
+</kw>
+<status status="PASS" start="2026-10-25T10:17:24.755445" elapsed="2.510511"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_TEST_MANUAL_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:27.266251" elapsed="0.006233"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:27.273633" level="INFO">Clicking element 'xpath=//input[@name='courses.Test Manual']'.</msg>
+<arg>${COURSES_TEST_MANUAL_CHECKBOX}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-25T10:17:27.273232" elapsed="0.036928"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:27.311708" level="INFO">Clicking button 'xpath=//button[@id='btn-sign-up']'.</msg>
+<arg>${REGISTER_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-25T10:17:27.310954" elapsed="0.068672"/>
+</kw>
+<status status="PASS" start="2026-10-25T10:17:24.755202" elapsed="2.624571"/>
+</kw>
+<kw name="Verify Checkbox Automate Test" owner="registerPage">
+<kw name="Open Register Page" owner="registerPage">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:27.380755" level="INFO">Opening browser 'chrome' to base url 'https://automate-test.stpb-digital.com/'.</msg>
+<arg>${WEB_BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-10-25T10:17:27.380533" elapsed="1.501317"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-10-25T10:17:28.882508" elapsed="0.384170"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${HYPERLINK_CREATE_ACCOUNT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-10-25T10:17:29.267464" elapsed="0.013056"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${HYPERLINK_CREATE_ACCOUNT}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-10-25T10:17:29.280782" elapsed="0.282776"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:29.565559" level="INFO">Clicking element 'xpath=//a[normalize-space(.)='Create an account']'.</msg>
+<arg>${HYPERLINK_CREATE_ACCOUNT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-25T10:17:29.564579" elapsed="0.048253"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${REGISTER_URL}</arg>
+<arg>10s</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" start="2026-10-25T10:17:29.613161" elapsed="0.019256"/>
+</kw>
+<kw name="Verify Register Page Displayed" owner="registerPage">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${WELCOME_MESSAGE}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:29.633405" elapsed="0.005464"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${RESET_BUTTON}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:29.639012" elapsed="0.003808"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${EMAIL_INPUT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:29.642965" elapsed="0.004628"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${PASSWORD_INPUT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:29.647771" elapsed="0.004333"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${MOBILE_PHONE_INPUT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:29.652244" elapsed="0.003186"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${FEMALE_RADIO}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:29.655544" elapsed="0.002978"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${MALE_RADIO}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:29.658647" elapsed="0.003519"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_SQL_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:29.662295" elapsed="0.003199"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_TEST_MANUAL_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:29.665622" elapsed="0.004665"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_AUTOMATE_TEST_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:29.670601" elapsed="0.005937"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_AUTOMATE_TEST2_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:29.676783" elapsed="0.009936"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${NATIONALITY_SELECT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:29.687121" elapsed="0.006577"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${ROLE_SELECT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:29.694739" elapsed="0.007356"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${PLAN_SELECT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:29.702666" elapsed="0.008775"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${REGISTER_BUTTON}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:29.712522" elapsed="0.012519"/>
+</kw>
+<status status="PASS" start="2026-10-25T10:17:29.632832" elapsed="0.092618"/>
+</kw>
+<status status="PASS" start="2026-10-25T10:17:27.380374" elapsed="2.345276"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_AUTOMATE_TEST_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:29.725823" elapsed="0.003642"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:29.729807" level="INFO">Clicking element 'xpath=//input[@name='courses.Automate Test']'.</msg>
+<arg>${COURSES_AUTOMATE_TEST_CHECKBOX}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-25T10:17:29.729631" elapsed="0.026479"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:29.756484" level="INFO">Clicking button 'xpath=//button[@id='btn-sign-up']'.</msg>
+<arg>${REGISTER_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-25T10:17:29.756317" elapsed="0.057346"/>
+</kw>
+<status status="PASS" start="2026-10-25T10:17:27.380084" elapsed="2.433713"/>
+</kw>
+<kw name="Verify Checkbox Automate Test2" owner="registerPage">
+<kw name="Open Register Page" owner="registerPage">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:29.814550" level="INFO">Opening browser 'chrome' to base url 'https://automate-test.stpb-digital.com/'.</msg>
+<arg>${WEB_BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-10-25T10:17:29.814361" elapsed="1.366184"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-10-25T10:17:31.181373" elapsed="0.404305"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${HYPERLINK_CREATE_ACCOUNT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-10-25T10:17:31.585850" elapsed="0.012235"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${HYPERLINK_CREATE_ACCOUNT}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-10-25T10:17:31.598258" elapsed="0.276025"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:31.875823" level="INFO">Clicking element 'xpath=//a[normalize-space(.)='Create an account']'.</msg>
+<arg>${HYPERLINK_CREATE_ACCOUNT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-25T10:17:31.874840" elapsed="0.056637"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${REGISTER_URL}</arg>
+<arg>10s</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" start="2026-10-25T10:17:31.935521" elapsed="0.012926"/>
+</kw>
+<kw name="Verify Register Page Displayed" owner="registerPage">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${WELCOME_MESSAGE}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:31.953886" elapsed="0.018246"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${RESET_BUTTON}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:31.972721" elapsed="0.010041"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${EMAIL_INPUT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:31.983307" elapsed="0.012019"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${PASSWORD_INPUT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:31.995606" elapsed="0.009379"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${MOBILE_PHONE_INPUT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:32.005251" elapsed="0.008812"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${FEMALE_RADIO}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:32.015295" elapsed="0.011273"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${MALE_RADIO}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:32.026822" elapsed="0.006302"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_SQL_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:32.033472" elapsed="0.006827"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_TEST_MANUAL_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:32.040558" elapsed="0.012633"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_AUTOMATE_TEST_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:32.053373" elapsed="0.005182"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_AUTOMATE_TEST2_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:32.058834" elapsed="0.004717"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${NATIONALITY_SELECT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:32.063721" elapsed="0.005192"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${ROLE_SELECT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:32.069221" elapsed="0.004696"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${PLAN_SELECT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:32.074139" elapsed="0.004951"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${REGISTER_BUTTON}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:32.079490" elapsed="0.004834"/>
+</kw>
+<status status="PASS" start="2026-10-25T10:17:31.950929" elapsed="0.133608"/>
+</kw>
+<status status="PASS" start="2026-10-25T10:17:29.814118" elapsed="2.270473"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_AUTOMATE_TEST2_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:32.084677" elapsed="0.002960"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:32.087919" level="INFO">Clicking element 'xpath=//input[@name='courses.Automate Test2']'.</msg>
+<arg>${COURSES_AUTOMATE_TEST2_CHECKBOX}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-25T10:17:32.087771" elapsed="0.024883"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:32.112972" level="INFO">Clicking button 'xpath=//button[@id='btn-sign-up']'.</msg>
+<arg>${REGISTER_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-25T10:17:32.112816" elapsed="0.109663"/>
+</kw>
+<status status="PASS" start="2026-10-25T10:17:29.813929" elapsed="2.408969"/>
+</kw>
+<kw name="Verify Dropdown Nationlity" owner="registerPage">
+<kw name="Open Register Page" owner="registerPage">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:32.225034" level="INFO">Opening browser 'chrome' to base url 'https://automate-test.stpb-digital.com/'.</msg>
+<arg>${WEB_BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-10-25T10:17:32.224434" elapsed="1.326492"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-10-25T10:17:33.552210" elapsed="0.385578"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${HYPERLINK_CREATE_ACCOUNT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-10-25T10:17:33.938066" elapsed="0.025376"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${HYPERLINK_CREATE_ACCOUNT}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-10-25T10:17:33.963631" elapsed="0.280293"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:34.245792" level="INFO">Clicking element 'xpath=//a[normalize-space(.)='Create an account']'.</msg>
+<arg>${HYPERLINK_CREATE_ACCOUNT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-25T10:17:34.244814" elapsed="0.043086"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${REGISTER_URL}</arg>
+<arg>10s</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" start="2026-10-25T10:17:34.288196" elapsed="0.017538"/>
+</kw>
+<kw name="Verify Register Page Displayed" owner="registerPage">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${WELCOME_MESSAGE}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:34.306191" elapsed="0.004340"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${RESET_BUTTON}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:34.310708" elapsed="0.004233"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${EMAIL_INPUT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:34.315106" elapsed="0.006983"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${PASSWORD_INPUT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:34.322237" elapsed="0.008760"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${MOBILE_PHONE_INPUT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:34.331156" elapsed="0.004424"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${FEMALE_RADIO}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:34.335759" elapsed="0.003496"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${MALE_RADIO}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:34.339411" elapsed="0.003565"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_SQL_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:34.343119" elapsed="0.003718"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_TEST_MANUAL_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:34.346975" elapsed="0.004446"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_AUTOMATE_TEST_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:34.351712" elapsed="0.003956"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_AUTOMATE_TEST2_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:34.355835" elapsed="0.003700"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${NATIONALITY_SELECT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:34.359724" elapsed="0.003749"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${ROLE_SELECT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:34.363609" elapsed="0.005531"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${PLAN_SELECT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:34.369404" elapsed="0.003610"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${REGISTER_BUTTON}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:34.373147" elapsed="0.003515"/>
+</kw>
+<status status="PASS" start="2026-10-25T10:17:34.305973" elapsed="0.070795"/>
+</kw>
+<status status="PASS" start="2026-10-25T10:17:32.223905" elapsed="2.152908"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${NATIONALITY_SELECT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-10-25T10:17:34.376887" elapsed="0.004998"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${NATIONALITY_SELECT}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-10-25T10:17:34.382036" elapsed="0.287541"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:34.670446" level="INFO">Clicking element 'xpath=//div[contains(@class, 'MuiSelect-select') and @id='nationality']'.</msg>
+<arg>${NATIONALITY_SELECT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-25T10:17:34.669895" elapsed="0.174672"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-10-25T10:17:34.845302" level="INFO">${OPTIONS} = xpath=//*[@role='option' and normalize-space(.)="Thai"]</msg>
+<var>${OPTIONS}</var>
+<arg>xpath=//*[@role='option' and normalize-space(.)="${nationality}"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-10-25T10:17:34.844956" elapsed="0.000419"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${OPTIONS}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-10-25T10:17:34.845576" elapsed="0.121071"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${OPTIONS}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-10-25T10:17:34.967162" elapsed="0.383724"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:35.351259" level="INFO">Clicking element 'xpath=//*[@role='option' and normalize-space(.)="Thai"]'.</msg>
+<arg>${OPTIONS}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-25T10:17:35.351073" elapsed="0.042128"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:35.393640" level="INFO">Verifying element 'xpath=//div[contains(@class, 'MuiSelect-select') and @id='nationality']' contains exact text 'Thai'.</msg>
+<arg>${NATIONALITY_SELECT}</arg>
+<arg>${nationality}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2026-10-25T10:17:35.393378" elapsed="0.007969"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${REGISTER_BUTTON}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-10-25T10:17:35.401509" elapsed="0.272508"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:35.674575" level="INFO">Clicking button 'xpath=//button[@id='btn-sign-up']'.</msg>
+<arg>${REGISTER_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-25T10:17:35.674280" elapsed="0.164211"/>
+</kw>
+<status status="PASS" start="2026-10-25T10:17:32.223098" elapsed="3.615913"/>
+</kw>
+<kw name="Verify Dropdown Role" owner="registerPage">
+<kw name="Open Register Page" owner="registerPage">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:35.841990" level="INFO">Opening browser 'chrome' to base url 'https://automate-test.stpb-digital.com/'.</msg>
+<arg>${WEB_BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-10-25T10:17:35.841696" elapsed="1.585832"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-10-25T10:17:37.428103" elapsed="0.410268"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${HYPERLINK_CREATE_ACCOUNT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-10-25T10:17:37.838730" elapsed="0.008046"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${HYPERLINK_CREATE_ACCOUNT}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-10-25T10:17:37.846931" elapsed="0.276200"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:38.123777" level="INFO">Clicking element 'xpath=//a[normalize-space(.)='Create an account']'.</msg>
+<arg>${HYPERLINK_CREATE_ACCOUNT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-25T10:17:38.123422" elapsed="0.248640"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${REGISTER_URL}</arg>
+<arg>10s</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" start="2026-10-25T10:17:38.372379" elapsed="0.216371"/>
+</kw>
+<kw name="Verify Register Page Displayed" owner="registerPage">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${WELCOME_MESSAGE}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:38.589303" elapsed="0.007281"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${RESET_BUTTON}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:38.596918" elapsed="0.006827"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${EMAIL_INPUT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:38.604070" elapsed="0.018270"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${PASSWORD_INPUT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:38.622676" elapsed="0.010742"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${MOBILE_PHONE_INPUT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:38.634201" elapsed="0.005878"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${FEMALE_RADIO}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:38.640392" elapsed="0.007688"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${MALE_RADIO}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:38.648552" elapsed="0.010590"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_SQL_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:38.659416" elapsed="0.005865"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_TEST_MANUAL_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:38.665440" elapsed="0.007998"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_AUTOMATE_TEST_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:38.673962" elapsed="0.007758"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_AUTOMATE_TEST2_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:38.682099" elapsed="0.006277"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${NATIONALITY_SELECT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:38.688645" elapsed="0.005922"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${ROLE_SELECT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:38.694887" elapsed="0.017230"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${PLAN_SELECT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:38.712295" elapsed="0.005427"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${REGISTER_BUTTON}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:38.718013" elapsed="0.005309"/>
+</kw>
+<status status="PASS" start="2026-10-25T10:17:38.589052" elapsed="0.134455"/>
+</kw>
+<status status="PASS" start="2026-10-25T10:17:35.841244" elapsed="2.882432"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${ROLE_SELECT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-10-25T10:17:38.723847" elapsed="0.010036"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${ROLE_SELECT}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-10-25T10:17:38.734349" elapsed="0.272324"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:39.007003" level="INFO">Clicking element 'xpath=//div[contains(@class, 'MuiSelect-select') and @id='select-role']'.</msg>
+<arg>${ROLE_SELECT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-25T10:17:39.006830" elapsed="0.020813"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-10-25T10:17:39.028180" level="INFO">${OPTIONS} = xpath=//*[@role='option' and normalize-space(.)="Admin"]</msg>
+<var>${OPTIONS}</var>
+<arg>xpath=//*[@role='option' and normalize-space(.)="${role}"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-10-25T10:17:39.027817" elapsed="0.000563"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${OPTIONS}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-10-25T10:17:39.028465" elapsed="0.007493"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${OPTIONS}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-10-25T10:17:39.036111" elapsed="0.266021"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:39.302487" level="INFO">Clicking element 'xpath=//*[@role='option' and normalize-space(.)="Admin"]'.</msg>
+<arg>${OPTIONS}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-25T10:17:39.302302" elapsed="0.029637"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:39.332481" level="INFO">Verifying element 'xpath=//div[contains(@class, 'MuiSelect-select') and @id='select-role']' contains exact text 'Admin'.</msg>
+<arg>${ROLE_SELECT}</arg>
+<arg>${role}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2026-10-25T10:17:39.332102" elapsed="0.010118"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${REGISTER_BUTTON}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-10-25T10:17:39.342385" elapsed="0.263245"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:39.606314" level="INFO">Clicking button 'xpath=//button[@id='btn-sign-up']'.</msg>
+<arg>${REGISTER_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-25T10:17:39.605922" elapsed="0.045426"/>
+</kw>
+<status status="PASS" start="2026-10-25T10:17:35.840625" elapsed="3.810988"/>
+</kw>
+<kw name="Verify Dropdown Plan" owner="registerPage">
+<kw name="Open Register Page" owner="registerPage">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:39.652994" level="INFO">Opening browser 'chrome' to base url 'https://automate-test.stpb-digital.com/'.</msg>
+<arg>${WEB_BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-10-25T10:17:39.652603" elapsed="2.954377"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-10-25T10:17:42.609317" elapsed="1.157320"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${HYPERLINK_CREATE_ACCOUNT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-10-25T10:17:43.767264" elapsed="0.019569"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${HYPERLINK_CREATE_ACCOUNT}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-10-25T10:17:43.787108" elapsed="0.387043"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:44.176851" level="INFO">Clicking element 'xpath=//a[normalize-space(.)='Create an account']'.</msg>
+<arg>${HYPERLINK_CREATE_ACCOUNT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-25T10:17:44.176026" elapsed="0.039469"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${REGISTER_URL}</arg>
+<arg>10s</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" start="2026-10-25T10:17:44.215799" elapsed="0.004890"/>
+</kw>
+<kw name="Verify Register Page Displayed" owner="registerPage">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${WELCOME_MESSAGE}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:44.221599" elapsed="0.006423"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${RESET_BUTTON}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:44.228320" elapsed="0.208437"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${EMAIL_INPUT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:44.436910" elapsed="0.011385"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${PASSWORD_INPUT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:44.448445" elapsed="0.003864"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${MOBILE_PHONE_INPUT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:44.452530" elapsed="0.003206"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${FEMALE_RADIO}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:44.455871" elapsed="0.003053"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${MALE_RADIO}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:44.459040" elapsed="0.003369"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_SQL_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:44.462595" elapsed="0.009838"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_TEST_MANUAL_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:44.472620" elapsed="0.003959"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_AUTOMATE_TEST_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:44.476725" elapsed="0.003722"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_AUTOMATE_TEST2_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:44.480595" elapsed="0.004661"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${NATIONALITY_SELECT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:44.485432" elapsed="0.003311"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${ROLE_SELECT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:44.488852" elapsed="0.003217"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${PLAN_SELECT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:44.492189" elapsed="0.003108"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${REGISTER_BUTTON}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:44.495404" elapsed="0.003473"/>
+</kw>
+<status status="PASS" start="2026-10-25T10:17:44.221270" elapsed="0.277712"/>
+</kw>
+<status status="PASS" start="2026-10-25T10:17:39.652300" elapsed="4.846727"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${PLAN_SELECT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-10-25T10:17:44.499103" elapsed="0.006261"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${PLAN_SELECT}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-10-25T10:17:44.505506" elapsed="0.267911"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:44.773904" level="INFO">Clicking element 'xpath=//div[contains(@class, 'MuiSelect-select') and @id='select-plan']'.</msg>
+<arg>${PLAN_SELECT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-25T10:17:44.773612" elapsed="0.028269"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-10-25T10:17:44.802535" level="INFO">${OPTIONS} = xpath=//*[@role='option' and normalize-space(.)="Basic"]</msg>
+<var>${OPTIONS}</var>
+<arg>xpath=//*[@role='option' and normalize-space(.)="${plan}"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-10-25T10:17:44.802179" elapsed="0.000546"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${OPTIONS}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-10-25T10:17:44.802959" elapsed="0.019382"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${OPTIONS}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-10-25T10:17:44.822596" elapsed="0.268472"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:45.092130" level="INFO">Clicking element 'xpath=//*[@role='option' and normalize-space(.)="Basic"]'.</msg>
+<arg>${OPTIONS}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-25T10:17:45.091682" elapsed="0.026694"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:45.119074" level="INFO">Verifying element 'xpath=//div[contains(@class, 'MuiSelect-select') and @id='select-plan']' contains exact text 'Basic'.</msg>
+<arg>${PLAN_SELECT}</arg>
+<arg>${plan}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2026-10-25T10:17:45.118659" elapsed="0.009659"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${REGISTER_BUTTON}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-10-25T10:17:45.128674" elapsed="0.286993"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:45.416040" level="INFO">Clicking button 'xpath=//button[@id='btn-sign-up']'.</msg>
+<arg>${REGISTER_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-25T10:17:45.415849" elapsed="0.212871"/>
+</kw>
+<status status="PASS" start="2026-10-25T10:17:39.651911" elapsed="5.977027"/>
+</kw>
+<kw name="Verify Register button is present" owner="registerPage">
+<kw name="Open Register Page" owner="registerPage">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:45.630343" level="INFO">Opening browser 'chrome' to base url 'https://automate-test.stpb-digital.com/'.</msg>
+<arg>${WEB_BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-10-25T10:17:45.630105" elapsed="1.309680"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-10-25T10:17:46.941204" elapsed="0.994175"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${HYPERLINK_CREATE_ACCOUNT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-10-25T10:17:47.936055" elapsed="0.020449"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${HYPERLINK_CREATE_ACCOUNT}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-10-25T10:17:47.956794" elapsed="0.313026"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-10-25T10:17:48.271070" level="INFO">Clicking element 'xpath=//a[normalize-space(.)='Create an account']'.</msg>
+<arg>${HYPERLINK_CREATE_ACCOUNT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-25T10:17:48.270472" elapsed="0.034038"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${REGISTER_URL}</arg>
+<arg>10s</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" start="2026-10-25T10:17:48.304730" elapsed="0.003540"/>
+</kw>
+<kw name="Verify Register Page Displayed" owner="registerPage">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${WELCOME_MESSAGE}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:48.309168" elapsed="0.005283"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${RESET_BUTTON}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:48.314627" elapsed="0.217511"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${EMAIL_INPUT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:48.532509" elapsed="0.007299"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${PASSWORD_INPUT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:48.540013" elapsed="0.004930"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${MOBILE_PHONE_INPUT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:48.545205" elapsed="0.004302"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${FEMALE_RADIO}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:48.549671" elapsed="0.003712"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${MALE_RADIO}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:48.553525" elapsed="0.003764"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_SQL_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:48.557539" elapsed="0.005227"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_TEST_MANUAL_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:48.562940" elapsed="0.004219"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_AUTOMATE_TEST_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:48.567374" elapsed="0.004115"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${COURSES_AUTOMATE_TEST2_CHECKBOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:48.571807" elapsed="0.004248"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${NATIONALITY_SELECT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:48.576323" elapsed="0.005186"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${ROLE_SELECT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:48.581720" elapsed="0.005089"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${PLAN_SELECT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:48.587111" elapsed="0.005082"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${REGISTER_BUTTON}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:48.592442" elapsed="0.005710"/>
+</kw>
+<status status="PASS" start="2026-10-25T10:17:48.308720" elapsed="0.289623"/>
+</kw>
+<status status="PASS" start="2026-10-25T10:17:45.629811" elapsed="2.968612"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${REGISTER_BUTTON}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-25T10:17:48.598591" elapsed="0.003555"/>
+</kw>
+<status status="PASS" start="2026-10-25T10:17:45.629187" elapsed="2.973078"/>
+</kw>
+<status status="PASS" start="2026-10-25T10:17:03.604617" elapsed="44.997822"/>
+</kw>
+<kw name="Teardown Web Test" type="TEARDOWN">
+<kw name="Run Keyword If Test Failed" owner="BuiltIn">
+<arg>Capture Page Screenshot</arg>
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<status status="PASS" start="2026-10-25T10:17:48.603169" elapsed="0.000111"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-10-25T10:17:48.603366" elapsed="1.587141"/>
+</kw>
+<status status="PASS" start="2026-10-25T10:17:48.602903" elapsed="1.587792"/>
+</kw>
+<doc>Verify that selecting all checkboxes works correctly.</doc>
+<status status="PASS" start="2026-10-25T10:17:03.604097" elapsed="46.586815"/>
+</test>
+<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-10-25T10:17:50.192194" elapsed="0.000348"/>
+</kw>
+<doc>Web register smoke test using the Register Page Object.</doc>
+<status status="PASS" start="2026-10-25T10:17:03.532210" elapsed="46.660453"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Register" id="s1" pass="1" fail="0" skip="0">Register</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

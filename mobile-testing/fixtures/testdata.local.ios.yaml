@@ -1,0 +1,41 @@
+# === Appium Capabilities ===
+APPIUM_URL: http://localhost:4723/wd/hub
+PLATFORM_NAME: iOS
+PLATFORM_VERSION: "17"
+DEVICE_NAME: iPhone 14
+APP_PATH: ./apps/ios-debug.app
+AUTOMATION_NAME: XCUITest
+
+# === API ===
+BASE_URL: http://localhost:5000
+
+# === Test Data ===
+USERS:
+  valid:
+    email: "testuser@local.com"
+    name: "Test User"
+  duplicate:
+    email: "testuser@local.com"
+    name: "Duplicate User"
+  invalid_email:
+    email: "not-an-email"
+    name: "Bad Email User"
+  empty_name:
+    email: "emptyname@local.com"
+    name: ""
+  logout_user:
+    email: "logout@local.com"
+    name: "Logout User"
+  login_user:
+    email: "loginuser@local.com"
+    name: "Login User"
+
+TOKEN:
+  valid: ""
+  invalid: "invalid-token-xyz-000"
+  empty: ""
+
+ORDERS:
+  customer:
+    name: "John Doe"
+    updated_name: "Jane Smith"

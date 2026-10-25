@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.14.0 on darwin)" generated="2026-10-23T11:45:08.581042" rpa="false" schemaversion="5">
+<suite id="s1" name="Robot framework Basic" source="/Users/phet/Documents/GitHub/Robot_framework_Basic">
+<suite id="s1-s1" name="Test" source="/Users/phet/Documents/GitHub/Robot_framework_Basic/Test.robot">
+<test id="s1-s1-t1" name="Test openbrowser" line="20">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-10-23T11:45:08.658948" level="INFO">Opening browser 'chrome' to base url 'https://automate-test.stpb-digital.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-10-23T11:45:08.658722" elapsed="1.559677"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-10-23T11:45:10.218828" elapsed="0.662930"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-10-23T11:45:10.882953" level="INFO">Typing text 'user.test@krupbeam.com' into text field 'id=email'.</msg>
+<arg>id=email</arg>
+<arg>user.test@krupbeam.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-23T11:45:10.882163" elapsed="0.170555"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-10-23T11:45:11.053140" level="INFO">Typing text 'jKNsrapwLNV7eBN' into text field 'name=password'.</msg>
+<arg>name=password</arg>
+<arg>jKNsrapwLNV7eBN</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-23T11:45:11.052911" elapsed="0.028307"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-10-23T11:45:11.931282" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-10-23T11:45:11.081443" elapsed="0.849954"/>
+</kw>
+<status status="PASS" start="2026-10-23T11:45:08.657214" elapsed="3.274407"/>
+</test>
+<status status="PASS" start="2026-10-23T11:45:08.601792" elapsed="3.332161"/>
+</suite>
+<status status="PASS" start="2026-10-23T11:45:08.583376" elapsed="3.352083"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Robot framework Basic" id="s1" pass="1" fail="0" skip="0">Robot framework Basic</stat>
+<stat name="Test" id="s1-s1" pass="1" fail="0" skip="0">Robot framework Basic.Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,9 @@
+# Bottom nav — Orders tab
+ORDERS_TAB: "accessibility_id=orders_tab"
+
+# Orders Screen
+EMPTY_ORDERS_TEXT: "chain=**/XCUIElementTypeStaticText[`name == 'No orders yet'`]"
+
+# Book Detail — Create Order
+CUSTOMER_NAME_INPUT: "accessibility_id=customer_name_input"
+CREATE_ORDER_BUTTON: "accessibility_id=create_order_button"
